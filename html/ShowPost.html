@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성</title>
+    <link rel="stylesheet" href="../styles/ShowPost.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WeMessage</h1>
+        <hr class="horizontal-rule"/>
+        <section class="Post">
+            <div class="sub">
+                <a id="backspace" class="backspace" href="./board.html" target="_blank">
+                    <img class="backspace" src="../images/backspace.png"/>
+                </a>
+            </div>
+            <div class="default">
+                <h2 class="title">게시글 상세</h2>
+            </div>
+            <div class="profile-menu">
+                <img src="../images/profile.png" class="profile-icon" onclick="toggleMenu()" alt="프로필 사진">
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="./profile-edit.html">회원정보 수정</a>
+                    <a href="./password-change.html">비밀번호 수정</a>
+                    <a href="./login.html">로그아웃</a>
+                </div>
+            </div>
+        </section>
+        <hr class="horizontal-rule-2"/>
+
+        <section class="main">
+            <h2 class="post-title">게시글 제목</h2>
+
+            <div class="writer-container">
+                <div class="writer">
+                    <img class="profile-icon2" src="../images/profileEX.jpeg" alt="작성자 프로필" />
+                    <div class="writer-details">
+                        <h4 class="nickname">작성자 닉네임</h4>
+                        <h5 class="created-at">yyyy-mm-dd hh:mm</h5>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="blue-button" id="modifyBtn">수정</button>
+                    <button class="gray-button" id="deleteBtn">삭제</button>
+                </div>
+            </div>
+        </section>
+        <hr class="horizontal-rule3"/>
+            <section class="body">
+                <div class="content-img">
+                    <img src="../images/imessage.png" alt="게시글 이미지" />
+                </div>
+                <article class="content">아이메시지에서 착안한 디자인... 사실 이렇게 하는 게 맞나...
+                    어렵네용... 하지만 어떻게든 끝까지만 하면된다는 마인드로 🏃‍♀️
+                </article>
+                <hr class="horizontal-rule3"/>
+                <div class="stats">
+                    <div class="view-count">
+                        <h3>0</h3>
+                        <p>조회수</p>
+                    </div>
+                    <div class="comment-count">
+                        <h3>2</h3>
+                        <p>댓글</p>
+                    </div>
+                    <div class="like-count">
+                        <h3>30</h3>
+                        <p>좋아요</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="comment">
+                <div class="comment-input">
+                    <textarea placeholder="댓글을 남겨주세요!"></textarea>
+                    <div class="comment-button-container">
+                        <button class="comment-input-button">댓글 등록</button>
+                    </div>
+                </div>
+                <div class="commentList">댓글 목록</div>
+            </section>
+        </section>
+        <div class="background"></div>
+    </body>
+    <script src="../js/board.js" type="module"></script>
+</html>
