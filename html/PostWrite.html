@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 작성</title>
+    <link rel="stylesheet" href="../styles/PostWrite.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WeMessage</h1>
+        <hr class="horizontal-rule"/>
+        <section class="Post">
+            <div class="sub">
+                <a id="backspace" class="backspace" href="./board.html" target="_blank">
+                    <img class="backspace" src="../images/backspace.png"/>
+                </a>
+            </div>
+            <div class="default">
+                <h2 class="title">게시글 작성</h2>
+            </div>
+            <div class="profile-menu">
+                <img src="../images/profile.png" class="profile-icon" onclick="toggleMenu()" alt="프로필 사진">
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="./profile-edit.html">회원정보 수정</a>
+                    <a href="./password-change.html">비밀번호 수정</a>
+                    <a href="./login.html">로그아웃</a>
+                </div>
+            </div>
+        </section>
+        <hr class="horizontal-rule-2"/>
+        <div class="wrap">
+            <div class="inputBox">
+                <label>제목*</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="제목을 입력해 주세요. (최대 26자)"
+                />
+                <!-- <p class="helperText" name="title"></p> -->
+            </div>
+            <div class="inputBox">
+                <label>내용*</label>
+                <textarea
+                    id="content"
+                    class="content-box"
+                    placeholder="내용을 입력해 주세요."
+                ></textarea>
+                <p class="helperText" name="content"></p>
+            </div>
+            <div class="inputBox">
+                <label class="non-border">이미지</label>
+                <input
+                    class="non-border"
+                    type="file"
+                    id="image"
+                    placeholder="파일을 선택해주세요."
+                    accept="image/*"
+                />
+            </div>
+            <button id="submit" class="blue-button">완료</button>
+        </div>
+        <section class="boardList"></section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 목록</title>
+    <link rel="stylesheet" href="../styles/PostList.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WeMessage</h1>
+        <hr class="horizontal-rule"/>
+        <section class="Post">
+            <div class="sub">
+                <a id="board-write" class="board-write" href="./board-write.html" target="_blank">
+                    <img class="board-write" src="../images/write.png"/>
+                </a>
+            </div>
+            <div class="default">
+                <h2 class="title">게시글 목록</h2>
+            </div>
+            <div class="profile-menu">
+                <img src="../images/profile.png" class="profile-icon" onclick="toggleMenu()" alt="프로필 사진">
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="./profile-edit.html">회원정보 수정</a>
+                    <a href="./password-change.html">비밀번호 수정</a>
+                    <a href="./login.html">로그아웃</a>
+                </div>
+            </div>
+        </section>
+        <section class="boardList"></section>
+    </div>
+</body>
+</html>

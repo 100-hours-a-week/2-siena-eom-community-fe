@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 정보 수정</title>
+    <link rel="stylesheet" href="../styles/signup.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">WeMessage</h1>
+        <hr class="horizontal-rule"/>
+        <h2 class="title">회원 정보 수정</h2>
+        <form>
+        <div class="profile-input">
+            <img class="icon-image" src="../images/profile.png"/>
+            <label for="profile">프로필 사진 변경</label>
+            <input type="file" name="profile" id="profile" accept="image/*" />
+        </div>
+        <div class="inputbox">
+            <label for="email">이메일</label>
+            <p id="user-email" class="user-email">example@naver.com</p>
+        </div>
+        <div class="inputbox">
+            <label for="nickname">닉네임</label>
+            <input type="text" name="nickname" id="nickname" placeholder="닉네임을 입력해 주세요" />
+            <p class="helperText" name="nickname"></p>
+        </div>
+            <button type="submit" class="blue-button">저장</button>
+        </form>
+    </div>
+</body>
+</html>
